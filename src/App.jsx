@@ -11,7 +11,7 @@ function App() {
   const [alertMessage, setAlertMessage] = useState('');
   const [alertVariant, setAlertVariant] = useState('null');
 
-  const agregarColaborador = (nuevoColaborador) => {
+  const agregarColaborador = (nuevoColaborador) => {  
     if (
       nuevoColaborador.nombre.trim() === '' ||
       nuevoColaborador.correo.trim() === '' ||
