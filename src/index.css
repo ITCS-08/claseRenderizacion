@@ -66,3 +66,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.form-container {
+  border: 1px solid #ccc;
+  padding: 45px;
+  border-radius: 7px;
+}
+
+.error {
+  padding: 10px;
+  color: white;
+  background-color: lightcoral;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  }
+

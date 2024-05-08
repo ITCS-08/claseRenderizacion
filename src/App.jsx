@@ -30,11 +30,11 @@ function App() {
   };
 
   return (
-    <div className="container-fluid mt-5">
-      <Alert message={alertMessage} variant={alertVariant} />
-      <h1>Lista de Colaboradores</h1>
+    <div className="container-fluid mt-2">
+    <h1>Lista de Colaboradores</h1>
       <Buscador colaboradores={colaboradores} setColaboradores={setColaboradores} />
       <Listado colaboradores={colaboradores} />
+      <Alert message={alertMessage} variant={alertVariant} />
       <Formulario agregarColaborador={agregarColaborador} />
     </div>
   );

@@ -19,10 +19,13 @@ function Formulario({ agregarColaborador }) {
   };
 
   return (
-    <div className="mt-4">
-      <h2>Agregar Colaborador</h2>
+    
+    <>
+    <div className="container ">
+    <div className="form-container "> 
+      <h2 className=" mb-3 ">Agregar Colaborador</h2>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3">
+        <div className="mb-3 mt-3">
           <label htmlFor="nombre" className="form-label">Nombre</label>
           <input type="text" className="form-control" id="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} />
         </div>
@@ -38,13 +41,15 @@ function Formulario({ agregarColaborador }) {
           <label htmlFor="cargo" className="form-label">Cargo</label>
           <input type="text" className="form-control" id="cargo" value={cargo} onChange={(e) => setCargo(e.target.value)} />
         </div>
-        <div className="mb-3">
+        <div className="mb-2">
           <label htmlFor="telefono" className="form-label">Teléfono</label>
           <input type="tel" className="form-control" id="telefono" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
         </div>
         <button type="submit" className="btn btn-primary">Agregar</button>
       </form>
     </div>
+    </div>
+    </>
   );
 }
 
